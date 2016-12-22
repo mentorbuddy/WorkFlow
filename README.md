@@ -1,6 +1,6 @@
 # MentorBuddy
 
-One Paragraph of project description goes here
+One Trial Project to get everyone Heads Up to Start
 
 ## Getting Started
 
@@ -19,6 +19,7 @@ Install rails from [Here](https://s3.amazonaws.com/railsinstaller/Windows/railsi
 1. Install rails from [Here](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.2.0.exe)
 2. Install Heroku Toolbelt from [Here](https://cli-assets.heroku.com/branches/stable/heroku-windows-amd64.exe)
 3. Ensure you have your favourite text editor installed.
+4. Install Heroku Toolbelt from [Here](https://nodejs.org)
 
 At this point you should have all the necessary software installed
 ```
@@ -91,7 +92,13 @@ Give an example
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Additional notes about how to deploy this on a live system
+
+```
+$ heroku login
+$ git push heroku master
+$ heroku open
+```
 
 ## Built With
 
