@@ -96,10 +96,12 @@ Additional notes about how to deploy this on a live system
 
 ```
 $ heroku login
-$ git push heroku master
+$ git push
+$ git push heroku
+$ heroku run rake db:migrate
 $ heroku open
 ```
-
+Project Live on [mbproject.herokuapp.com](https://mbproject.herokuapp.com)
 ## Built With
 
 * [Ruby on Rails](http://rubyonrails.org/) - The web framework used
