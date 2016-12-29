@@ -1,6 +1,6 @@
 # MentorBuddy
 
-One Trial Project to get everyone Heads Up to Start
+Our BoilerPlate Project to get everyone Heads Up to Start
 
 ## Getting Started
 
@@ -14,16 +14,17 @@ Assuming you have 64-bit Windows
 
 A step by step series of examples that tell you have to get a development env running
 
-Install rails from [Here](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.2.0.exe)
-
 1. Install rails from [Here](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.2.0.exe)
 2. Install Heroku Toolbelt from [Here](https://cli-assets.heroku.com/branches/stable/heroku-windows-amd64.exe)
 3. Ensure you have your favourite text editor installed.
-4. Install Heroku Toolbelt from [Here](https://nodejs.org)
+4. Install NodeJs from [Here](https://nodejs.org)
 
 At this point you should have all the necessary software installed
+You can start the Application, using the following Steps
 ```
-$ gem update --system 2.1.9
+$ git clone https://github.com/mentorbuddy/WorkFlow
+$ bundle install
+$rails server
 ```
 
 ## Understanding the workflow
@@ -70,26 +71,23 @@ $ git branch -d topic-branch
 ```
 Unlike the -d flag, the -D flag will delete the branch even though we haven’t merged in the changes.
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+## Doing & Undoing things on Rails
+Controllers
 ```
-Give an example
+$ rails generate controller FooBars baz quux
+$ rails destroy  controller FooBars
 ```
-
-### And coding style tests
-
-Explain what these tests test and why
-
+Models
 ```
-Give an example
+$ rails generate model Foo bar:string baz:integer
+$ rails destroy model Foo
 ```
-
+Database
+```
+$ rake db:migrate
+$ rake db:rollback
+$ rake db:migrate VERSION=0
+```
 ## Deployment
 
 Additional notes about how to deploy this on a live system
